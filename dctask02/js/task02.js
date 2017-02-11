@@ -33,6 +33,7 @@ jQuery(function () {
             var resultAdapter = {Movies: result};
             displayData(resultAdapter)
         }else{
+            cleanDisaply();
             displayData(globalData)
         }
         return false;
