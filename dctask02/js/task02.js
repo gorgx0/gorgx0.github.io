@@ -56,6 +56,11 @@ jQuery(function () {
         return false;
     });
 
+    $('#reset').click(function (e) {
+        e.preventDefault();
+        cleanDisaply();
+        displayData(globalData);
+    });
 
     $.getJSON('code_test_data.json')
         .done(function (data) {
